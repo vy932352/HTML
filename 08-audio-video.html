@@ -1,0 +1,41 @@
+<!--
+Audio y video 
+
+Estas etiquetas nos permiten insertar contenido multimedia 
+
+<audio>...</audio>
+<video>...</video>  
+
+Parámetros 
+- controls: Muestra los controles de las etiquetas
+- autoplay: Reproduce el contenido automáticamente
+- loop: Reproduce el contenido en bucle
+- muted: Reproduce el contenido sin sonido
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audio y video</title>
+</head>
+<body>
+    <h1>Audio y video</h1>
+    
+    <h2>contenido de audio</h2>
+    <audio controls autoplay muted>
+        <source src="multimedy/plankton.mp3" />
+        Tu navegador no es compatible con el contenido multimedia
+    </audio>
+
+    <h2>contenido de video</h2>
+    <video controls autoplay muted>
+        <source src="multimedy/yoongles.mp4" />
+        Tu navegador no es compatible con el contenido multimedia
+    </video>
+</body>
+</html>
