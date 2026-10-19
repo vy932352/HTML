@@ -1,0 +1,62 @@
+<!--
+
+Formularios
+
+Son elementos que permiten el ngreso de información por parte del usuario. 
+
+Para el contenedor se usa:
+<form>...</form>
+
+Dentro de este elemento se colocan los campos (fields) y etiqueta (label)
+
+<input /> campo de acceso de información son elementos self-closing, es decir, no requieren etiqueta de cierre y hay diferentes tipos, texto, boton, checkbox, radio, etc.
+
+<label>...</label>
+
+Parametros
+
+Para label:
+- `for`: Asocia la relación con el input.
+type: tipo de campo
+name: nombre del campo
+placeholder: texto que aparece dentro del campo de acceso a la información
+id: identificador para programar y validar el campo
+
+otros elementos:
+<textarea>...</textarea> para campos de texto más grandes
+<select>...</select> para listas desplegables
+<option>...</option> para opciones dentro de select
+<button>...</button> para botones de acción
+debe programarse en JavaScript para que realice alguna acción
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">   
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>form</h1>
+
+        <form>
+
+            <label for="ekisde">ekisde:</label>
+            <input type="text" name="ekisde" id="ekisde" placeholder="type your genshin id"/>
+            <textarea name="ekisde" id="ekisde"></textarea>
+
+            <label for="genshin?">genshin?:</label>
+            <input type="checkbox" name="genshin?" id="genshin?"/>
+
+            <label for="gender?">gender?:</label>
+            <select name="gender?" id="gender?">
+                <option value="si">si</option>
+                <option value="si">si</option>
+            </select>
+
+        </form>
+
+    </body>
