@@ -1,0 +1,80 @@
+<!-- Comentario HTML 
+    Etiquetas semánticas
+
+    Son un tipo de contenido para el navegador, que le permite al usuario identificar el contenido de la página web.
+
+    Esto le ayuda al navegador a identificar el contenido de la página web y a los motores de búsqueda a indexar mejor el contenido.
+
+    <header>...</header> Define el encabezado del documento. Generalmente tiene la marca, la navegación y algún CTA (Call to Action).
+    <nav>...</nav> Barra de navegación de la página web.
+    <main>...</main> Contenido principal de la página web.
+    <section>...</section> Sección de la página web.
+    <article>...</article> Artículo independiente de la página web. Información que no es tan importante y puede no estar relacionada con el contenido cercano a él.
+    <aside>...</aside> Contenido complementario de la página web. 
+    <footer>...</footer> Pie de página web. Como enlaces, legales, formularios secundarios, mapa del sitio, copyright...
+
+    El buscador de google aprovecha esta semántica para puntuar mejor los sitios web.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etiquetas semánticas</title>
+    </head>
+    <body>
+
+        <header>
+            Soy el encabezado de la página.
+                <section>
+                Primera selección del header. 
+                </section>
+        </header>
+
+        <section>
+            Esto está fuera de la página y no es recomendable.
+        </section>
+
+        <main>
+            Soy el contenido principal de la página.
+
+            <section>
+                <h2>Productos</h2>
+                
+                <articles>
+                    Producto 1
+                </articles>
+
+                <articles>
+                    Producto 
+                </articles>
+            
+            </section>
+
+            <section>
+                Segunda selección del main
+            </section>
+
+            <section>
+                Tercera selección del main
+            </section>
+        </main>
+
+        <aside>
+            <h2>Productos de otros usuarios </h2>
+            <articles>
+                Producto 3
+            </articles>
+        </aside>
+
+        <footer>
+            Soy el pie de página.
+        </footer>
+
+            <section>
+                Esto está fuera de la página y no es recomendable.
+            </section>
+    </body>
+</html>
+
